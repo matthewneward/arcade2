@@ -188,8 +188,8 @@ function endPlaySession(){
         alert (`thanks for playing, hope to see you again`);
         document.getElementById("reloadButton").innerHTML=`<button onclick="location.reload()"> reload fresh page </button>`;
         //change to percent
-        let percentGamesWon=numWins/numGames
-        let percentGamesLoss=numLosses/numGames
+        let percentGamesWon=numWins/numGames*100
+        let percentGamesLoss=numLosses/numGames*100
         //statistics table.
         statistics=`<table>
         <tr>
